@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>someparts.parts</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>someparts.parts</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/wda5lkl.css">
+
+  <style>
+    body {
+      border: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      
+      /* background-color: rgba(0, 0, 255, .5); */
+
+      width: 100vw;
+      height: 100vh;
+  
+      /* background-image: url("BG1.jpg"); */
+      /* background-repeat: no-repeat; */
+      /* background-position: center;  */
+    }
+
+    a:link {
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      
+      /* background-color: white; */
+
+      color: black;
+      text-decoration: none;
+    }
+
+    table {
+      width: 100vw;
+      height: 100vh;
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid #cacaca;
+      padding: 6px;
+
+      font-family: 'acumin-pro', sans-serif;
+      font-size: .75em;
+      /* font-weight: 300; */
+      color: #222222;
+
+      background-color: rgba(245, 245, 245, 1);
+      width: 5.1vh;
+    }
+
+    td:hover {
+      background: black;
+      color: white;
+    }
+
+    td:hover a {
+      color: white;
+    }
+
+    .row-cell {
+      border: 1px solid #cacaca;
+      padding: 6px;
+
+      font-family: 'acumin-pro', sans-serif;
+      font-size: .75em;
+      color: #222222;
+      text-align: center;
+
+      background-color: #e9e9e9;
+      width: 5.1vh;
+    }
+
+    .row-cell:hover {
+      background-color: #d1d1d1;
+      color: black;
+    }
+
+    tr:hover:first-child {
+      background-color: d1d1d1;
+    }
+
+    .header-info-cell {
+      background-color: #dddddd;
+      font-weight: 700;
+      border: 1px solid black;
+    }
+
+    .header-cell {
+      background-color: #e9e9e9;
+
+      text-align: center;
+    }
+
+    .header-cell:hover {
+      background-color: #d1d1d1;
+      color: black;
+    }
+
+    .banner-bottom {
+     height: 5vh;	
+     overflow: hidden;
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     background: blue;
+     color: white;
+     border: none;
+     font-family: 'acumin-pro', sans-serif;
+     font-size: 1em;
+     font-weight: 700;
+    }
+
+    .banner-bottom p {
+     position: absolute;
+     margin: 0;
+     line-height: 5vh;
+     text-align: center;
+     font-size: 2em;
+     /* Starting position */
+     -moz-transform:translateX(100%);
+     -webkit-transform:translateX(100%);	
+     transform:translateX(100%);
+     /* Apply animation to this element */	
+     -moz-animation: banner-bottom 10s linear infinite;
+     -webkit-animation: banner-bottom 10s linear infinite;
+     animation: banner-bottom 10s linear infinite;
+    }
+
+    /* Move it (define the animation) */
+    @-moz-keyframes banner-bottom {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+    }
+
+    @-webkit-keyframes banner-bottom {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes banner-bottom {
+     0%   { 
+     -moz-transform: translateX(100%); /* Browser bug fix */
+     -webkit-transform: translateX(100%); /* Browser bug fix */
+     transform: translateX(100%);
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Browser bug fix */
+     -webkit-transform: translateX(-100%); /* Browser bug fix */
+     transform: translateX(-100%);
+     }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table>
+      <tr class="header-row">
+        <td class="header-cell">&nbsp;</td>
+        <td class="header-cell">A</td>
+        <td class="header-cell">B</td>
+        <td class="header-cell">C</td>
+        <td class="header-cell">D</td>
+        <td class="header-cell">E</td>
+        <td class="header-cell">F</td>
+        <td class="header-cell">G</td>
+        <td class="header-cell">H</td>
+        <td class="header-cell">I</td>
+        <td class="header-cell">J</td>
+        <td class="header-cell">K</td>
+        <td class="header-cell">L</td>
+        <td class="header-cell">M</td>
+        <td class="header-cell">N</td>
+        <td class="header-cell">O</td>
+        <td class="header-cell">P</td>
+        <td class="header-cell">Q</td>
+        <td class="header-cell">R</td>
+        <td class="header-cell">S</td>
+      </tr>
+      <tr>
+        <td class="row-cell">1</td>
+        <td class="header-info-cell" colspan="2" style="font-weight: 700;"><a href="http://www.jinsoo.co/1/index.html">a kit of these some parts</a></td>
+        
+        <td class="header-info-cell">kit size</td>
+        <td class="header-info-cell">color</td>
+        <td class="header-info-cell">kit parts</td>
+        <td class="header-info-cell">size of parts</td>
+        <td class="header-info-cell">themes</td>
+        <td class="header-info-cell">density of theme</td>
+        <td class="header-info-cell">add-ons</td>
+        <td class="header-info-cell">stockastudio@gmail.com</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">2</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>xsmall</td>
+        <td>bright white</td>
+        <td>dunnage bag</td>
+        <td>small</td>
+        <td>rubber</td>
+        <td>light</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">3</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>small</td>
+        <td>cloud gray</td>
+        <td>sandbag</td>
+        <td>medium</td>
+        <td>water</td>
+        <td>medium</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">4</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>medium</td>
+        <td>cobalt blue</td>
+        <td>tarp</td>
+        <td>large</td>
+        <td>plants</td>
+        <td>dense</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">5</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>large</td>
+        <td>fluorescent green</td>
+        <td>edge guard</td>
+        <td>&nbsp;</td>
+        <td>plastics</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">6</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>xlarge</td>
+        <td>&nbsp;</td>
+        <td>corner guard</td>
+        <td>&nbsp;</td>
+        <td>surface finishes</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">7</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>foam pad</td>
+        <td>&nbsp;</td>
+        <td>text</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">8</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>buckle</td>
+        <td>&nbsp;</td>
+        <td>graphics</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">9</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>water weight</td>
+        <td>&nbsp;</td>
+        <td>machinery</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">10</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>ratchet strap</td>
+        <td>&nbsp;</td>
+        <td>sports</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">11</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>shim</td>
+        <td>&nbsp;</td>
+        <td>diagrams</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">12</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>sticker</td>
+        <td>&nbsp;</td>
+        <td>games</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">13</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>tie down</td>
+        <td>&nbsp;</td>
+        <td>market</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">14</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>dogs</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">15</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>events</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">16</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>etc</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">17</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">18</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">19</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">20</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">21</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">22</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">23</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">24</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">25</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">26</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">27</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><b>stock</b>-a-studio</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">28</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>305 W. Liberty Rd</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">29</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>Ann Arbor, MI 48103</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">30</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">31</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">32</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="row-cell">33</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="banner-bottom">
+    <p><strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio </p>
+  </div>
+</body>
+</html>
+</body>
+</html>
