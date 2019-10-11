@@ -6,1051 +6,132 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>someparts.parts</title>
 
-  <link rel="stylesheet" href="https://use.typekit.net/wda5lkl.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ajs8pir.css">
 
   <style>
     body {
-      border: none;
-      padding: 0px;
-      margin: 0px;
+      margin: 0;
+      background-color: black;
+      vertical-align: middle;
+      text-align: center;
     }
 
-    .container {
-      border: none;
-      padding: 0px;
-      margin: 0px;
-      
-      /* background-color: rgba(0, 0, 255, .5); */
+    div {
+      padding: 0;
+      margin: auto;
 
-      width: 100vw;
-      height: 100vh;
-  
+      /* width: 100vw; */
+      /* height: 100vh; */
+
+      color: white;
+      /* background-color: blue; */
+
+      font-family: 'acumin-pro', sans-serif;
+      /* font-weight: 700; */
+      /* font-size: 3em; */
+
       position: relative;
+      top: 50vh;
+      transform: translate(0px,-7em);
+      /* left: 50vw; */
 
-      /* background-image: url("BG1.jpg"); */
-      /* background-repeat: no-repeat; */
-      /* background-position: center;  */
-    }
-
-    a:link {
-      border: none;
-      padding: 0px;
-      margin: 0px;
-      
-      /* background-color: white; */
-
-      color: black;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: black;
-    }
-
-    table {
-      width: 100vw;
-      height: 100vh;
-      border-collapse: collapse;
-    }
-
-    td {
-      border: 1px solid #cacaca;
-      padding: 6px;
-
-      font-family: 'acumin-pro', sans-serif;
-      font-size: .75em;
-      /* font-weight: 300; */
-      color: #222222;
-
-      /* background-color: rgba(245, 245, 245, 1); */
-      width: 5.1vh;
-    }
-
-    td:hover {
-      background: black;
-      color: white;
-    }
-
-    td:hover a {
-      color: white;
-    }
-
-    .row-cell {
-      border: 1px solid #cacaca;
-      padding: 6px;
-
-      font-family: 'acumin-pro', sans-serif;
-      font-size: .75em;
-      color: #222222;
+      vertical-align: middle;
       text-align: center;
+      /* line-height: 100vh; */
 
-      background-color: #e9e9e9;
-      width: 5.1vh;
+      display: inline-block;
     }
 
-    .row-cell:hover {
-      background-color: #e9e9e9;
-      color: black;
-    }
+    .caption {
+      padding: 0;
+      margin: auto;
 
-    .header-info-cell {
-      background-color: #dddddd;
+      /* width: 100vw; */
+      /* height: 100vh; */
+
+      color: white;
+      /* background-color: blue; */
+
+      font-family: 'acumin-pro', sans-serif;
+      font-weight: 100;
+      font-size: 2em;
+      font-style: italic;
+
+      /* position: relative;
+      top: 50vh;
+      transform: translate(0px,-1.5em);
+      left: 50vw; */
+
+      vertical-align: middle;
+      text-align: center;
+      /* line-height: 100vh; */
+
+      display: inline-block;
+    }
+    .announce {
+      padding: 0;
+      margin: auto;
+
+      /* width: 100vw; */
+      /* height: 100vh; */
+
+      color: white;
+      /* background-color: blue; */
+
+      font-family: 'acumin-pro', sans-serif;
       font-weight: 700;
-      border: 1px solid black;
-    }
+      font-size: 3em;
 
-    .header-cell {
-      background-color: #e9e9e9;
+      /* position: relative;
+      top: 50vh;
+      transform: translate(0px,-1.5em);
+      left: 50vw; */
 
+      vertical-align: middle;
       text-align: center;
-    }
+      /* line-height: 100vh; */
 
-    .header-cell:hover {
-      background-color: #e9e9e9;
-      color: black;
+      display: inline-block;
     }
-
-    .banner-bottom {
-     height: 5vh;	
-     overflow: hidden;
-     position: fixed;
-     bottom: 0px;
-     width: 100%;
-     background: white;
-     color: black;
-     border: none;
-     font-family: 'acumin-pro', sans-serif;
-     font-size: 1em;
-     font-weight: 700;
-    }
-
-    .banner-bottom p {
-     position: absolute;
-     margin: 0;
-     line-height: 5vh;
-     text-align: center;
-     font-size: 2em;
-     /* Starting position */
-     -moz-transform:translateX(100%);
-     -webkit-transform:translateX(100%);	
-     transform:translateX(100%);
-     /* Apply animation to this element */	
-     -moz-animation: banner-bottom 10s linear infinite;
-     -webkit-animation: banner-bottom 10s linear infinite;
-     animation: banner-bottom 10s linear infinite;
-    }
-
-    /* Move it (define the animation) */
-    @-moz-keyframes banner-bottom {
-     0%   { -moz-transform: translateX(100%); }
-     100% { -moz-transform: translateX(-100%); }
-    }
-
-    @-webkit-keyframes banner-bottom {
-     0%   { -webkit-transform: translateX(100%); }
-     100% { -webkit-transform: translateX(-100%); }
-    }
-
-    @keyframes banner-bottom {
-     0%   { 
-     -moz-transform: translateX(100%); /* Browser bug fix */
-     -webkit-transform: translateX(100%); /* Browser bug fix */
-     transform: translateX(100%);
-     }
-     100% { 
-     -moz-transform: translateX(-100%); /* Browser bug fix */
-     -webkit-transform: translateX(-100%); /* Browser bug fix */
-     transform: translateX(-100%);
-     }
-    }
-
-    .highlight {
-    background-color:rgba(0, 0, 0, .05);
-    /* color:rgba(0, 255, 0, .8); */
-    }
-
-    .pic-graphic {
-      border: none;
+    .contact {
       padding: 0;
-      margin: 0;
+      margin: auto;
 
-      position: absolute;
-      width: 200px;
-      height: 150px;
+      /* width: 100vw; */
+      /* height: 100vh; */
 
-      display: none;
+      color: white;
+      /* background-color: blue; */
 
-      top: 171px;
-      left: 1194.183349609375px;
+      font-family: 'acumin-pro', sans-serif;
+      font-weight: 400;
+      font-size: 2em;
 
-      background-color: red;
+      /* position: relative;
+      top: 50vh;
+      transform: translate(0px,-1.5em);
+      left: 50vw; */
+
+      vertical-align: middle;
+      text-align: center;
+      /* line-height: 100vh; */
+
+      display: inline-block;
     }
 
-    .pic-tarp {
-      border: none;
-      padding: 0;
-      margin: 0;
-
-      position: absolute;
-      width: 200px;
-      height: 150px;
-
-      display: none;
-
-      top: 535px;
-      left: 778.63330078125px;
-
-      background-color: blueviolet;
-    }
-
-    .pic-green {
-      border: none;
-      padding: 0;
-      margin: 0;
-
-      position: absolute;
-      width: 200px;
-      height: 150px;
-
-      display: none;
-
-      top: 479px;
-      left: 1516.7833251953125px;
-
-      background-color: rgb(0, 255, 0);
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <table>
-      <tr class="header-row">
-        <td class="header-cell">&nbsp;</td>
-        <td class="header-cell a">A</td>
-        <td class="header-cell b">B</td>
-        <td class="header-cell c">C</td>
-        <td class="header-cell d">D</td>
-        <td class="header-cell e">E</td>
-        <td class="header-cell f">F</td>
-        <td class="header-cell g">G</td>
-        <td class="header-cell h">H</td>
-        <td class="header-cell i">I</td>
-        <td class="header-cell j">J</td>
-        <td class="header-cell k">K</td>
-        <td class="header-cell l">L</td>
-        <td class="header-cell m">M</td>
-        <td class="header-cell n">N</td>
-        <td class="header-cell o">O</td>
-        <td class="header-cell p">P</td>
-        <td class="header-cell q">Q</td>
-        <td class="header-cell r">R</td>
-        <td class="header-cell s">S</td>
-      </tr>
-      <tr>
-        <td class="row-cell 1">1</td>
-        <td class="header-info-cell col-a"><a href="http://www.someparts.parts">a kit of these some parts</a></td>
-        <td class="header-info-cell col-b">kit-size</td>
-        <td class="header-info-cell col-c">color</td>
-        <td class="header-info-cell col-d">kit parts</td>
-        <td class="header-info-cell col-e">size of parts</td>
-        <td class="header-info-cell col-f">themes</td>
-        <td class="header-info-cell col-g">density of theme</td>
-        <td class="header-info-cell col-h">add-ons</td>
-        <td class="header-info-cell col-i">stockastudio@gmail.com</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 2">2</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">xsmall</td>
-        <td class="col-c my-cell">bright white</td>
-        <td class="col-d my-cell">dunnage bag</td>
-        <td class="col-e my-cell">small</td>
-        <td class="col-f my-cell">rubber</td>
-        <td class="col-g my-cell">light</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 3">3</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">small</td>
-        <td class="col-c my-cell">cloud gray</td>
-        <td class="col-d my-cell">sandbag</td>
-        <td class="col-e my-cell">medium</td>
-        <td class="col-f my-cell">water</td>
-        <td class="col-g my-cell">medium</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 4">4</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">medium</td>
-        <td class="col-c my-cell">cobalt blue</td>
-        <td class="col-d my-cell">tarp</td>
-        <td class="col-e my-cell">large</td>
-        <td class="col-f my-cell">plants</td>
-        <td class="col-g my-cell">dense</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 5">5</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">large</td>
-        <td class="col-c my-cell">fluorescent green</td>
-        <td class="col-d my-cell">edge guard</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">plastics</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 6">6</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">xlarge</td>
-        <td class="col-c my-cell">&nbsp;</td>
-        <td class="col-d my-cell">corner guard</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">surface finishes</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 7">7</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">foam pad</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">text</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 8">8</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">buckle</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">graphics</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 9">9</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">water weight</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">machinery</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 10">10</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">ratchet strap</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">sports</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 11">11</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">shim</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">diagrams</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 12">12</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">sticker</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">games</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 13">13</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">tie down</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">market</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 14">14</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">dogs</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 15">15</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">events</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 16">16</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">etc</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 17">17</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 18">18</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 19">19</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 20">20</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 21">21</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 22">22</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 23">23</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 24">24</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 25">25</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 26">26</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell"><b>stock</b>-a-studio</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 27">27</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">305 W. Liberty Rd</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 28">28</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">Ann Arbor, MI 48103</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 29">29</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 30">30</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 31">31</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 32">32</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="row-cell 33">33</td>
-        <td class="col-a my-cell">&nbsp;</td>
-        <td class="col-b my-cell">&nbsp;</td>
-        <td class="col-c my-cell"></td>
-        <td class="col-d my-cell">&nbsp;</td>
-        <td class="col-e my-cell">&nbsp;</td>
-        <td class="col-f my-cell">&nbsp;</td>
-        <td class="col-g my-cell">&nbsp;</td>
-        <td class="col-h my-cell">&nbsp;</td>
-        <td class="col-i my-cell">&nbsp;</td>
-        <td class="col-j my-cell">&nbsp;</td>
-        <td class="col-k my-cell">&nbsp;</td>
-        <td class="col-l my-cell">&nbsp;</td>
-        <td class="col-m my-cell">&nbsp;</td>
-        <td class="col-n my-cell">&nbsp;</td>
-        <td class="col-o my-cell">&nbsp;</td>
-        <td class="col-p my-cell">&nbsp;</td>
-        <td class="col-q my-cell">&nbsp;</td>
-        <td class="col-r my-cell">&nbsp;</td>
-        <td class="col-s my-cell">&nbsp;</td>
-      </tr>
-    </table>
+  <div id="myDiv">
+    <p class="caption">currently building parts</p></br>
+    </br>
+    <p class="announce">GRAND OPENING 10.19.19</p></br>
+    </br>
+    <p class="contact"><strong>stock</strong>-a studio</p></br>
+    <p class="contact" style="font-size: 1em;">stockastudio@gmail.com</p></br>
+    <p class="contact" style="font-size: 1em;">305 W. Liberty Rd</p></br>
+    <p class="contact" style="font-size: 1em;">Ann Arbor, MI 48103</p></br>
   </div>
 
-  <div class="pic-graphic"></div>
-  <div class="pic-tarp"></div>
-  <div class="pic-green"></div>
-
-  <div class="banner-bottom">
-    <p><strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio <strong>stock</strong>-a-studio </p>
-  </div>
-
-  <script src="jquery.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.my-cell').on('mouseover', function() {
-        $(this).closest('tr').addClass('highlight');
-        $(this).closest('table').find('.my-cell:nth-child(' + ($(this).index() + 1) + ')').addClass('highlight');
-      });
-      $('.my-cell').on('mouseout', function() {
-          $(this).closest('tr').removeClass('highlight');
-          $(this).closest('table').find('.my-cell:nth-child(' + ($(this).index() + 1) + ')').removeClass('highlight');
-      });
-      $(".col-b").hover(function() {
-        $(".banner-bottom").css({"background": "#4574c4", "color": "#ffffff"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-c").hover(function() {
-        $(".banner-bottom").css({"background": "#ed7d31", "color": "#ffffff"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-d").hover(function() {
-        $(".banner-bottom").css({"background": "#ffbf00", "color": "#ffffff"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-e").hover(function() {
-        $(".banner-bottom").css({"background": "#70ad47", "color": "#ffffff"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-f").hover(function() {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#fa7d00"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-g").hover(function() {
-        $(".banner-bottom").css({"background": "#ffc7ce", "color": "#9c0006"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-h").hover(function() {
-        $(".banner-bottom").css({"background": "#ffeb9c", "color": "#9c5600"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-      $(".col-i").hover(function() {
-        $(".banner-bottom").css({"background": "#c6efce", "color": "#006100"});
-        }, function () {
-        $(".banner-bottom").css({"background": "#ffffff", "color": "#000000"});
-      })
-
-      $("td:contains(graphics)").hover(function() {
-        $(".pic-graphic").css({"display": "block"});
-        }, function () {
-        $(".pic-graphic").css({"display": "none"}) 
-      })
-      $("td:contains(tarp)").hover(function() {
-        $(".pic-tarp").css({"display": "block"});
-        }, function () {
-        $(".pic-tarp").css({"display": "none"}) 
-      })
-      $("td:contains(gree)").hover(function() {
-        $(".pic-green").css({"display": "block"});
-        }, function () {
-        $(".pic-green").css({"display": "none"}) 
-      })
-    })
-  </script>
 </body>
 </html>
