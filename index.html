@@ -10,9 +10,9 @@
 
   <style>
     body {
-      margin: 0;
+      /* margin: 0; */
       background-color: black;
-      vertical-align: middle;
+      /* vertical-align: middle; */
       text-align: center;
     }
 
@@ -118,19 +118,83 @@
 
       display: inline-block;
     }
+    .banner-bottom {
+     border: none;
+     padding: 0;
+     margin: 0;
 
+     height: 5vh;	
+     overflow: hidden;
+     /* position: fixed; */
+     left: 0;
+     /* top: 106vh; */
+     width: 100%;
+     background: white;
+     color: black;
+     border: none;
+     font-family: 'acumin-pro', sans-serif;
+     font-size: 1em;
+     font-weight: 700;
+    }
+
+    .banner-bottom p {
+     position: absolute;
+     margin: 0;
+     line-height: 5vh;
+     text-align: center;
+     font-size: 2em;
+     /* Starting position */
+     -moz-transform:translateX(100%);
+     -webkit-transform:translateX(100%);	
+     transform:translateX(100%);
+     /* Apply animation to this element */	
+     -moz-animation: banner-bottom 12s linear infinite;
+     -webkit-animation: banner-bottom 12s linear infinite;
+     animation: banner-bottom 12s linear infinite;
+    }
+
+    /* Move it (define the animation) */
+    @-moz-keyframes banner-bottom {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+    }
+
+    @-webkit-keyframes banner-bottom {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes banner-bottom {
+     0%   { 
+     -moz-transform: translateX(100%); /* Browser bug fix */
+     -webkit-transform: translateX(100%); /* Browser bug fix */
+     transform: translateX(100%);
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Browser bug fix */
+     -webkit-transform: translateX(-100%); /* Browser bug fix */
+     transform: translateX(-100%);
+     }
+    }
   </style>
 </head>
 <body>
   <div id="myDiv">
-    <p class="caption">currently building parts</p></br>
+    <p class="caption">some parts in the making</p></br>
     </br>
-    <p class="announce">GRAND OPENING 10.19.19</p></br>
+    <p class="announce">OPENING:</p></br>
+    <p class="announce">10.19.19</p></br>
     </br>
-    <p class="contact"><strong>stock</strong>-a studio</p></br>
-    <p class="contact" style="font-size: 1em;">stockastudio@gmail.com</p></br>
-    <p class="contact" style="font-size: 1em;">305 W. Liberty Rd</p></br>
-    <p class="contact" style="font-size: 1em;">Ann Arbor, MI 48103</p></br>
+    <!-- <p class="contact"><span style="font-weight: 900;">stock</span>-a-studio.</p></br> -->
+  </div>
+  <div class="banner-bottom">
+    <p><span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. <span style="font-weight: 900;">stock</span>-a-studio. </p>
+  </div>
+  <!-- <p class="contact" style="font-size: 1em;">stockastudio@gmail.com</p></br> -->
+  <div id="myDiv">
+  </br>
+    <p class="contact" style="font-size: 1em;">serving Los Angeles and Detroit areas</p></br>
+    <p class="contact" style="font-size: 1em;"></p></br>
   </div>
 
 </body>
