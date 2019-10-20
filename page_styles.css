@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: block;
+  margin: auto;
+  text-align: center;
+
+  color: white;
+  background-color: black;
+
+  font-family: 'acutmin-pro', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: italic;
+
+  line-height: 100vh;
+}
